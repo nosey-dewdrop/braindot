@@ -43,3 +43,12 @@ land/flop = first training data + live sales demo (Levels PhotoAI precedent).
   a FRAMEWORK to influencer agencies: "install this like Damla installed her Claude Code."
   Dogfooding evidence: 16 Jul session produced 4 LinkedIn essays + 8 educational reels +
   patch notes from ONE working conversation — that throughput is the demo.
+- OUTCOMES PAGE LAW (Damla, 16 Jul, Headspace reference): the product's public page shows
+  RESULTS like headspace.com outcomes — big number + claim + linked source (their sources are
+  peer-reviewed journals; ours start as measured internal benchmarks, Damla-as-first-user case
+  study = first data). Every claim ships with its measurement link or doesn't ship.
+- SINGLE-SOURCE CONTENT MODEL (Damla pain, 16 Jul: "her platformun ayri icerigini tutmak cok
+  zor"): the product's core loop = KERNEL (lesson + proof + metaphor) produced once → platforms
+  are RENDERS (essay / reel / long vlog chain). Long vlogs = chains of 4-6 kernels + narrative
+  bridges, never fresh content. This is both nymphee's L3/L4 architecture AND Damla's own
+  content system going forward.
