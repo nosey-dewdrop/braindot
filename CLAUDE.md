@@ -27,3 +27,19 @@ land/flop = first training data + live sales demo (Levels PhotoAI precedent).
 **Design law:** NO generic center-column landing (AI-tell). stitchu line: calm, technical, data-forward.
 
 **Ideas parking:** —
+
+**16 Jul night additions (Damla):**
+- RENAME PENDING: "nymphee" has bad phonetics in EN (nympho association) — name will change
+  before any public artifact. Candidate on the table: "myna" (voice-mimicking bird; fits
+  voice-preservation moat). Damla decides; check domain/trademark when picked.
+- BUILD PATTERN LOCKED: tree-looped engineering (stitchu chain precedent, 16 Jul):
+  diagnosis root → branch-on-measurement → regression guard (auto-revert) → verdict rubric.
+  "Loop hits a problem → fork a branch → branch delivers a number." See
+  stitchu/docs/loop-engineering.md. NOT a wrapper — architectural first law stands.
+- PRODUCT INSIGHT (Damla, core positioning): Damla's own Claude Code setup IS the product
+  prototype — a system that recognizes content-worthy moments in conversation and routes
+  them to the right stock (essay/reel/devlog) WITHOUT being told each time, then expands
+  ideas ("fikirlerin genislemesi icin stratejiler" = an idea-expansion layer). Sellable as
+  a FRAMEWORK to influencer agencies: "install this like Damla installed her Claude Code."
+  Dogfooding evidence: 16 Jul session produced 4 LinkedIn essays + 8 educational reels +
+  patch notes from ONE working conversation — that throughput is the demo.
