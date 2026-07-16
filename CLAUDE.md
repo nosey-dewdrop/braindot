@@ -7,10 +7,16 @@ a naked AI wrapper. Architectural first law: swap the underlying LLM and the pro
 **Status (16 Jul):** TALKING phase just ended, repo/folder created. NO code yet. Full plan in PROJECT.md.
 Build starts tomorrow at FAZ 0 / LOOP-01 (vertical slice, one platform, real output).
 
-**Where we left off:** architecture core is mature (layers + moat/pipe split + contracts + cold-start +
-vertical-slice build order + loop queue). BUSINESS MODEL is the open piece — Damla wants mentorship on it.
-Next session opens with the 3 open questions in PROJECT.md: (1) who exactly buys, (2) pricing/what they pay
-for, (3) why-you vs Mindra/rivals.
+**Where we left off (16 Jul night):** architecture core mature. BUSINESS MODEL worked out a lot (see
+PROJECT.md "BUSINESS MODEL"): nymphee is Damla's PRODUCT (not an agency service); sells "the creator's
+hands & arms" (idea+writing+publishing, voice-preserved) = machine ghostwriter; monthly SUB survives because
+content never ends + embedded in workflow; ideal customer = "low status high income" influencers, FIRST user
+= Damla herself (dev × influencer × fun intersection). Corrected mentor miss: engineers = high status, not
+the target; influencers = the low-status-high-income target.
+
+**ORDER (Damla's call):** keep talking BUSINESS MODEL → then DESIGN → THEN build layers (code). Nothing
+built until business + design firm. STILL OPEN: (1) pricing/how much — NEXT session, (2) why-you vs rivals.
+Vision = full hands&arms (all platforms); first BUILD = one arm (LinkedIn end-to-end).
 
 **Moat (never forget):** L2 voice + L5 flop + L6 benchmark = moat (trained, data accrues, uncopyable) →
 all engineering depth here. L1/L3/L4 = pipes (just work). Sell the moat, never the pipes.
