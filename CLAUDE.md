@@ -52,3 +52,11 @@ land/flop = first training data + live sales demo (Levels PhotoAI precedent).
   are RENDERS (essay / reel / long vlog chain). Long vlogs = chains of 4-6 kernels + narrative
   bridges, never fresh content. This is both nymphee's L3/L4 architecture AND Damla's own
   content system going forward.
+- BRAND REFERENCE LOCKED (Damla, 16 Jul, 19 screenshots): **bear.app** — mascot-driven warm
+  SaaS: illustrated character everywhere (mascot = a little ink bird), clean white layout,
+  playful microcopy ("No spam, ever. Maybe bear hugs though"), Bear-style pricing page
+  (free vs pro checklist, cheap sub, 7-day trial), blog with release posts, community page
+  with press + app store quotes, awards strip. Site domain pattern: bear.app → ours = <name>.app.
+- NAME DIRECTION: ink+bird family (inkbird itself = taken IoT brand; vox REJECTED, Damla
+  hates the word). Domain scan 16 Jul: inkfinch.com FREE, inkbeak.com FREE (whois; .app
+  results unreliable, re-verify at purchase). Awaiting Damla's pick.
