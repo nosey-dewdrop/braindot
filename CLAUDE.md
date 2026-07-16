@@ -60,3 +60,5 @@ land/flop = first training data + live sales demo (Levels PhotoAI precedent).
 - NAME DIRECTION: ink+bird family (inkbird itself = taken IoT brand; vox REJECTED, Damla
   hates the word). Domain scan 16 Jul: inkfinch.com FREE, inkbeak.com FREE (whois; .app
   results unreliable, re-verify at purchase). Awaiting Damla's pick.
+
+**PARKED (Damla, 16 Jul night): nothing starts here until stitchu is DONE (definition: 80% benchmark + sewn test + student CV live + Aug 2 launch). Do not begin FAZ 0 from any session before Damla explicitly reopens this project.**
