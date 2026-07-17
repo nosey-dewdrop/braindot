@@ -29,9 +29,12 @@ land/flop = first training data + live sales demo (Levels PhotoAI precedent).
 **Ideas parking:** —
 
 **16 Jul night additions (Damla):**
-- RENAME PENDING: "nymphee" has bad phonetics in EN (nympho association) — name will change
-  before any public artifact. Candidate on the table: "myna" (voice-mimicking bird; fits
-  voice-preservation moat). Damla decides; check domain/trademark when picked.
+- NAME LOCKED (18 Jul, Damla): **inkbee**. nymphee dropped — bad connotation (nympho /
+  femme-fatale / Lilith). inkbee stays in the ink+bird family (fits voice moat), "bee" =
+  the tireless worker that produces content for you; clean phonetics, everyone spells it right.
+  Domain = subdomain under noseydewdrop.com (inkbee.noseydewdrop.com). Trademark: inkbird = taken
+  IoT brand (Class 9); global tech means USPTO/EUIPO matter, but SaaS/branding classes (42/35)
+  are the ones to clear when Damla goes public — indie can start on name+subdomain, register at traction.
 - BUILD PATTERN LOCKED: tree-looped engineering (stitchu chain precedent, 16 Jul):
   diagnosis root → branch-on-measurement → regression guard (auto-revert) → verdict rubric.
   "Loop hits a problem → fork a branch → branch delivers a number." See

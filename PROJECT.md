@@ -1,7 +1,9 @@
-# nymphee — Personal Branding SaaS (living doc)
+# inkbee — Personal Branding SaaS (living doc)
 
-> Name: **nymphee** (nymph + -ee, coined/ownable; trademark & SaaS space checked clear 16 Jul).
-> Chosen over "fae" (common word, weak/risky mark). Working name — locks once the business model firms up.
+> Name: **inkbee** (LOCKED 18 Jul). Dropped "nymphee" — bad connotation (nympho / femme-fatale).
+> ink+bird family (fits voice-preservation moat), "bee" = tireless content worker. Subdomain
+> inkbee.noseydewdrop.com. No trademark on it in the SaaS/branding space (Damla's read); inkbird is a
+> taken IoT brand (Class 9, different class) — clear USPTO/EUIPO at public launch, fine to start now.
 >
 > Status: repo + folder created 16 Jul night. Docs written, NO code yet. Build starts at FAZ 0 / LOOP-01
 > tomorrow with a fresh head. Next session's first agenda item = the BUSINESS MODEL open questions (below).
