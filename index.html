@@ -76,9 +76,30 @@
   nav a:hover { color: var(--ink); }
   nav a.here { color: var(--ink); }
   nav a.here::after { content: " ●"; font-size: 8px; color: var(--dot); vertical-align: 2px; }
-  nav .status { color: var(--muted); }
 
-  main { padding-top: 64px; }
+  main { padding-top: 64px; position: relative; }
+  .soon {
+    position: absolute;
+    top: 96px;
+    right: 6%;
+    transform: rotate(2.2deg);
+    font-style: italic;
+    font-size: 21px;
+    color: var(--muted);
+  }
+  .soon .dot {
+    color: var(--dot);
+    font-style: normal;
+    display: inline-block;
+    animation: breathe 2.8s ease-in-out infinite;
+  }
+  @keyframes breathe {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.25; }
+  }
+  @media (max-width: 720px) {
+    .soon { position: static; display: block; margin-top: 18px; }
+  }
 
   .h1wrap { display: grid; }
   .h1wrap h1 { grid-area: 1 / 1; }
@@ -166,11 +187,11 @@
     <nav>
       <a class="here" href="./">vision</a>
       <a href="patch-notes.html">patch notes</a>
-      <span class="status">in build · coming soon</span>
     </nav>
   </header>
 
   <main>
+    <span class="soon">in build, coming soon<span class="dot">.</span></span>
     <div class="h1wrap">
       <h1 class="ghost" aria-hidden="true">
         <span class="l1">A personal branding motor that</span><br>
