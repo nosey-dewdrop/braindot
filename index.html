@@ -80,6 +80,8 @@
 
   main { padding-top: 64px; }
 
+  .h1wrap { display: grid; }
+  .h1wrap h1 { grid-area: 1 / 1; }
   h1 {
     font-weight: normal;
     font-size: 34px;
@@ -87,6 +89,17 @@
     letter-spacing: -0.015em;
     max-width: 21ch;
   }
+  h1.ghost { visibility: hidden; }
+  .caret {
+    display: inline-block;
+    width: 2px;
+    height: 0.95em;
+    background: var(--ink);
+    vertical-align: -0.12em;
+    margin-left: 2px;
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
   h1 .l1 { display: inline-block; transform: rotate(-1.6deg); }
   h1 .l2 { display: inline-block; transform: rotate(1.1deg); margin-left: 7vw; }
   h1 em { font-style: italic; }
@@ -158,10 +171,16 @@
   </header>
 
   <main>
-    <h1>
-      <span class="l1">A personal branding motor that</span><br>
-      <span class="l2">writes in <em>your</em> voice, not at you<span class="bigdot">.</span></span>
-    </h1>
+    <div class="h1wrap">
+      <h1 class="ghost" aria-hidden="true">
+        <span class="l1">A personal branding motor that</span><br>
+        <span class="l2">writes in <em>your</em> voice, not at you<span class="bigdot">.</span></span>
+      </h1>
+      <h1 id="type" aria-label="A personal branding motor that writes in your voice, not at you.">
+        <span class="l1"></span><br>
+        <span class="l2"></span>
+      </h1>
+    </div>
 
     <div class="cols">
       <div class="a">
@@ -187,6 +206,50 @@
 </div>
 
 <script>
+  // typewriter intro
+  (function () {
+    const h1 = document.getElementById('type');
+    const l1 = h1.querySelector('.l1');
+    const l2 = h1.querySelector('.l2');
+    const plan = [
+      { el: l1, html: false, text: 'A personal branding motor that' },
+      { el: l2, html: false, text: 'writes in ' },
+      { el: l2, html: true, open: '<em>', close: '</em>', text: 'your' },
+      { el: l2, html: false, text: ' voice, not at you' },
+      { el: l2, html: true, open: '<span class="bigdot">', close: '</span>', text: '.' }
+    ];
+    const caret = document.createElement('span');
+    caret.className = 'caret';
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      l1.textContent = plan[0].text;
+      l2.innerHTML = 'writes in <em>your</em> voice, not at you<span class="bigdot">.</span>';
+      return;
+    }
+    let seg = 0, pos = 0;
+    let wrap = null;
+    function step() {
+      const p = plan[seg];
+      if (!p) return; // done, caret keeps blinking
+      if (p.html && pos === 0) {
+        wrap = document.createElement(p.open.includes('em') ? 'em' : 'span');
+        if (!p.open.includes('em')) wrap.className = 'bigdot';
+        p.el.appendChild(wrap);
+      }
+      const target = p.html ? wrap : p.el;
+      target.appendChild(document.createTextNode(p.text[pos]));
+      p.el.parentNode === h1 && p.el.appendChild(caret);
+      pos++;
+      let delay = 34 + Math.random() * 40;
+      if (pos >= p.text.length) {
+        seg++; pos = 0;
+        if (plan[seg] && plan[seg].el !== p.el) delay = 420;
+      }
+      setTimeout(step, delay);
+    }
+    l1.appendChild(caret);
+    setTimeout(step, 500);
+  })();
+
   // thought dots: seeded scatter, gently pushed away by the cursor
   (function () {
     const field = document.getElementById('field');
