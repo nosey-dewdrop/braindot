@@ -8,9 +8,8 @@
 <style>
   :root {
     --paper: #ffffff;
-    --ink: #1b1b1b;
-    --muted: #6e6a66;
-    --hairline: #e3e0dc;
+    --ink: #141414;
+    --muted: #757068;
     --dot: #d23f31;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -19,108 +18,113 @@
     background: var(--paper);
     color: var(--ink);
     font-family: Charter, Georgia, 'Iowan Old Style', 'Times New Roman', serif;
-    font-size: 13px;
-    line-height: 1.45;
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-x: hidden;
   }
+
+  #field {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .tdot {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--ink);
+    opacity: 0.16;
+    transition: transform 0.6s cubic-bezier(.22,1,.36,1);
+    will-change: transform;
+  }
+
   .page {
-    max-width: 1060px;
+    position: relative;
+    z-index: 1;
+    max-width: 1040px;
     margin: 0 auto;
-    padding: 0 28px;
+    padding: 26px 30px 40px;
   }
 
   header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 14px 0 10px;
-    border-bottom: 1px solid var(--hairline);
   }
   .wordmark {
-    font-size: 16px;
-    letter-spacing: -0.01em;
+    font-size: 22px;
     color: var(--ink);
     text-decoration: none;
+    letter-spacing: -0.01em;
   }
   .wordmark .dot {
     color: var(--dot);
-    animation: breathe 2.8s ease-in-out infinite;
     display: inline-block;
+    transition: transform 0.25s cubic-bezier(.34,1.56,.64,1);
   }
-  @keyframes breathe {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.25; }
-  }
+  .wordmark:hover .dot { transform: translateY(-7px); }
   nav {
     display: flex;
     align-items: baseline;
-    gap: 18px;
-    font-size: 11.5px;
+    gap: 20px;
+    font-size: 13px;
   }
-  nav a {
-    color: var(--muted);
-    text-decoration: none;
-  }
+  nav a { color: var(--muted); text-decoration: none; }
   nav a:hover { color: var(--ink); }
-  nav a.here { color: var(--ink); border-bottom: 1px solid var(--ink); }
+  nav a.here { color: var(--ink); }
+  nav a.here::after { content: " ●"; font-size: 8px; color: var(--dot); vertical-align: 2px; }
   nav .status { color: var(--muted); }
-  nav .status b { font-weight: normal; color: var(--ink); }
 
-  main {
-    padding: 22px 0 34px;
-  }
+  main { padding-top: 52px; }
   main h1 {
-    font-size: 16px;
     font-weight: normal;
-    margin-bottom: 4px;
+    font-size: 26px;
+    letter-spacing: -0.01em;
+    transform: rotate(-1.2deg);
+    display: inline-block;
   }
   main .sub {
-    font-size: 11.5px;
+    font-size: 13px;
     color: var(--muted);
-    margin-bottom: 14px;
-  }
-  .entries {
-    border-top: 1px solid var(--hairline);
-  }
-  .entry {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 32px;
-    padding: 9px 0;
-    border-bottom: 1px solid var(--hairline);
-  }
-  .entry time {
-    font-size: 11.5px;
-    color: var(--muted);
-    font-variant-numeric: tabular-nums;
-    padding-top: 2px;
-  }
-  .entry p {
-    max-width: 68ch;
-    font-size: 12.5px;
-    line-height: 1.45;
+    margin: 4px 0 44px;
+    transform: rotate(-1.2deg);
   }
 
-  footer {
-    border-top: 1px solid var(--hairline);
-    padding: 10px 0 18px;
+  .entry {
+    max-width: 60ch;
+    margin-bottom: 40px;
+  }
+  .entry:nth-child(odd) { transform: rotate(-0.7deg); }
+  .entry:nth-child(even) { transform: rotate(0.6deg); margin-left: 12vw; }
+  .entry time {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 4px;
+    font-variant-numeric: tabular-nums;
+  }
+  .entry time::before { content: "● "; font-size: 8px; vertical-align: 2px; color: var(--ink); }
+  .entry p { font-size: 14.5px; }
+
+  .foot {
+    margin-top: 72px;
     display: flex;
     justify-content: space-between;
-    font-size: 11px;
+    align-items: baseline;
+    font-size: 13px;
     color: var(--muted);
+    transform: rotate(-0.4deg);
   }
-  footer a {
-    color: var(--muted);
-    text-decoration: none;
-    border-bottom: 1px solid var(--hairline);
-  }
-  footer a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+  .foot a { color: var(--muted); }
+  .foot a:hover { color: var(--ink); }
 
-  @media (max-width: 760px) {
-    .entry { grid-template-columns: 1fr; gap: 4px; }
+  @media (max-width: 720px) {
+    .entry:nth-child(even) { margin-left: 6vw; }
   }
 </style>
 </head>
 <body>
+<div id="field"></div>
 <div class="page">
 
   <header>
@@ -128,7 +132,7 @@
     <nav>
       <a href="./">vision</a>
       <a class="here" href="patch-notes.html">patch notes</a>
-      <span class="status"><b>in build</b> · coming soon</span>
+      <span class="status">in build · coming soon</span>
     </nav>
   </header>
 
@@ -150,13 +154,54 @@
         <p>Project born. Core idea settled in one night: a layered motor where the underlying model is replaceable and the trained voice is not. Plan written, repo created, no code yet.</p>
       </div>
     </div>
+
+    <div class="foot">
+      <span>braindot is a <a href="https://noseydewdrop.com">noseydewdrop</a> product.</span>
+      <span>2026</span>
+    </div>
   </main>
 
-  <footer>
-    <span>braindot is a <a href="https://noseydewdrop.com">noseydewdrop</a> product.</span>
-    <span>2026</span>
-  </footer>
-
 </div>
+
+<script>
+  (function () {
+    const field = document.getElementById('field');
+    let seed = 13;
+    const rand = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    const dots = [];
+    const N = 64;
+    for (let i = 0; i < N; i++) {
+      const d = document.createElement('div');
+      d.className = 'tdot';
+      const x = rand() * 100, y = rand() * 100;
+      const s = 3 + rand() * 5;
+      d.style.left = x + 'vw';
+      d.style.top = y + 'vh';
+      d.style.width = s + 'px';
+      d.style.height = s + 'px';
+      field.appendChild(d);
+      dots.push({ el: d, x, y });
+    }
+    let raf = null;
+    window.addEventListener('mousemove', (e) => {
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = null;
+        const mx = (e.clientX / window.innerWidth) * 100;
+        const my = (e.clientY / window.innerHeight) * 100;
+        for (const d of dots) {
+          const dx = d.x - mx, dy = d.y - my;
+          const dist = Math.hypot(dx, dy);
+          if (dist < 14 && dist > 0.01) {
+            const f = (14 - dist) * 2.2;
+            d.el.style.transform = `translate(${(dx / dist) * f}px, ${(dy / dist) * f}px)`;
+          } else {
+            d.el.style.transform = 'translate(0, 0)';
+          }
+        }
+      });
+    });
+  })();
+</script>
 </body>
 </html>
