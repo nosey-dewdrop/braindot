@@ -5,7 +5,6 @@
 a naked AI wrapper. Architectural first law: swap the underlying LLM and the product must not collapse.
 
 **Status (19 Jul):** PARKED until stitchu is done. NO product code. Live coming-soon site: nosey-dewdrop.github.io/braindot (index.html = vision, patch-notes.html = patch notes; Bear/Medium editorial, small type, tight spacing, GitHub Pages on main). Old braindot repo content wiped 19 Jul; this repo took the name. Full plan in PROJECT.md.
-Build starts tomorrow at FAZ 0 / LOOP-01 (vertical slice, one platform, real output).
 
 **Where we left off (16 Jul night):** architecture core mature. BUSINESS MODEL worked out a lot (see
 PROJECT.md "BUSINESS MODEL"): braindot is Damla's PRODUCT (not an agency service); sells "the creator's
