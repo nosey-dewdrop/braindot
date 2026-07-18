@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>braindot</title>
-<meta name="description" content="braindot is a personal branding motor. It learns a creator's voice and produces content that sounds like them. Coming soon.">
+<title>patch notes · braindot</title>
+<meta name="description" content="The braindot build, documented as it happens.">
 <style>
   :root {
     --paper: #ffffff;
@@ -66,46 +66,38 @@
   nav .status b { font-weight: normal; color: var(--ink); }
 
   main {
+    padding: 22px 0 34px;
+  }
+  main h1 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 4px;
+  }
+  main .sub {
+    font-size: 11.5px;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .entries {
+    border-top: 1px solid var(--hairline);
+  }
+  .entry {
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 32px;
-    padding: 22px 0 34px;
-  }
-  .rail {
-    font-size: 11.5px;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-  .rail p { margin-bottom: 10px; max-width: 24ch; }
-
-  .vision h1 {
-    font-size: 19px;
-    font-weight: normal;
-    line-height: 1.35;
-    letter-spacing: -0.01em;
-    max-width: 32ch;
-    margin-bottom: 12px;
-  }
-  .vision > p {
-    max-width: 62ch;
-    margin-bottom: 9px;
-  }
-  .lines {
-    margin: 16px 0 0;
-    border-top: 1px solid var(--hairline);
-  }
-  .lines div {
-    display: grid;
-    grid-template-columns: 128px 1fr;
-    gap: 14px;
-    padding: 6px 0;
+    padding: 9px 0;
     border-bottom: 1px solid var(--hairline);
-    max-width: 68ch;
   }
-  .lines span:first-child {
-    color: var(--muted);
+  .entry time {
     font-size: 11.5px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
     padding-top: 2px;
+  }
+  .entry p {
+    max-width: 68ch;
+    font-size: 12.5px;
+    line-height: 1.45;
   }
 
   footer {
@@ -124,7 +116,7 @@
   footer a:hover { color: var(--ink); border-bottom-color: var(--ink); }
 
   @media (max-width: 760px) {
-    main { grid-template-columns: 1fr; gap: 24px; }
+    .entry { grid-template-columns: 1fr; gap: 4px; }
   }
 </style>
 </head>
@@ -134,30 +126,30 @@
   <header>
     <a class="wordmark" href="./">braindot<span class="dot">.</span></a>
     <nav>
-      <a class="here" href="./">vision</a>
-      <a href="patch-notes.html">patch notes</a>
+      <a href="./">vision</a>
+      <a class="here" href="patch-notes.html">patch notes</a>
       <span class="status"><b>in build</b> · coming soon</span>
     </nav>
   </header>
 
   <main>
-    <aside class="rail">
-      <p>Planning and architecture stage. No code yet, on purpose.</p>
-      <p>The build is documented in the patch notes as it happens.</p>
-      <p>First user of the motor: its founder. Everything shipped here will have been used on a real account first.</p>
-    </aside>
+    <h1>Patch notes</h1>
+    <p class="sub">The build, documented as it happens. Newest first.</p>
 
-    <section class="vision">
-      <h1>A personal branding motor that writes in your voice, not at you.</h1>
-      <p>Most creators do not run out of ideas. They run out of hands. braindot is built to be those hands: it learns how one specific person sounds and turns their raw material into content that reads like they wrote it, from idea to draft to post.</p>
-      <p>The voice is the product. Generic output is treated as a defect, measured and filtered before it ever reaches a feed.</p>
-
-      <div class="lines">
-        <div><span>What it is</span><span>A motor that produces personal-brand content in the creator's own voice.</span></div>
-        <div><span>Who it is for</span><span>Creators and influencers who publish for a living and want their hands back.</span></div>
-        <div><span>What it is not</span><span>A template machine, a caption generator, one more AI writing toy.</span></div>
+    <div class="entries">
+      <div class="entry">
+        <time>2026-07-19</time>
+        <p>The project takes its final name: braindot. This site goes up. Patch notes start here and will track the build from architecture to first output.</p>
       </div>
-    </section>
+      <div class="entry">
+        <time>2026-07-18</time>
+        <p>Build paused by design: an earlier product ships first. Business model talks matured, the naming search continued.</p>
+      </div>
+      <div class="entry">
+        <time>2026-07-16</time>
+        <p>Project born. Core idea settled in one night: a layered motor where the underlying model is replaceable and the trained voice is not. Plan written, repo created, no code yet.</p>
+      </div>
+    </div>
   </main>
 
   <footer>
