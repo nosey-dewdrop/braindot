@@ -1,8 +1,8 @@
-# inkbee — Personal Branding SaaS (living doc)
+# braindot — Personal Branding SaaS (living doc)
 
-> Name: **inkbee** (LOCKED 18 Jul). Dropped "nymphee" — bad connotation (nympho / femme-fatale).
+> Name: **braindot** (LOCKED 18 Jul). Dropped "braindot" — bad connotation (nympho / femme-fatale).
 > ink+bird family (fits voice-preservation moat), "bee" = tireless content worker. Subdomain
-> inkbee.noseydewdrop.com. No trademark on it in the SaaS/branding space (Damla's read); inkbird is a
+> braindot.noseydewdrop.com. No trademark on it in the SaaS/branding space (Damla's read); inkbird is a
 > taken IoT brand (Class 9, different class) — clear USPTO/EUIPO at public launch, fine to start now.
 >
 > Status: repo + folder created 16 Jul night. Docs written, NO code yet. Build starts at FAZ 0 / LOOP-01
@@ -131,18 +131,18 @@ out and gets published. stitchu logic: first a full dress (rough seams, but wear
 
 ## BUSINESS MODEL (matured 16 Jul night — Damla + mentor, still in progress)
 
-CORRECTION to earlier draft: **Damla is NOT an agency selling a service. nymphee is Damla's PRODUCT.**
+CORRECTION to earlier draft: **Damla is NOT an agency selling a service. braindot is Damla's PRODUCT.**
 She sells the product; content creators buy it if they want. No middleman. Agencies = a *possible later*
 channel (bulk sale), NOT required. This is the clean B2C model Damla wanted from the start.
 
 ### What we sell — the creator's "hands and arms" (end-to-end)
-nymphee does the WHOLE content job, not one slice: **idea/program + writing + publishing**, keeping the
-user's voice. A "machine ghostwriter" (human ghostwriters cost $2-5k/mo; nymphee is a small fraction).
+braindot does the WHOLE content job, not one slice: **idea/program + writing + publishing**, keeping the
+user's voice. A "machine ghostwriter" (human ghostwriters cost $2-5k/mo; braindot is a small fraction).
 - **idea/program** — never-run-dry weekly content plan (kills the #1 burnout cause: "what do I post")
 - **writing** — every piece in the user's voice (L2 moat: doesn't sound like AI slop → trust survives)
-- **publishing** — user uploads reels/carousel; nymphee decides when/where/how and posts it
-End-to-end = rival tools each solve one slice (Supergrow writes, Buffer posts); nymphee = all in one.
-"Hands and arms" = irreplaceable: cancelling nymphee = losing your arms (embedded in daily workflow).
+- **publishing** — user uploads reels/carousel; braindot decides when/where/how and posts it
+End-to-end = rival tools each solve one slice (Supergrow writes, Buffer posts); braindot = all in one.
+"Hands and arms" = irreplaceable: cancelling braindot = losing your arms (embedded in daily workflow).
 
 ### Why a SUBSCRIPTION survives (Damla's sharp catch: "one-time won't sustain a sub")
 Voice is learned ONCE (true, one-time). But content NEVER ends — every week needs fresh ideas/posts, and
@@ -170,7 +170,7 @@ Same motor, two sales messages: small = "I make you visible", big = "scale witho
 
 ### STILL OPEN (next sessions, in order — Damla asked for mentorship here)
 1. **How much / pricing** — monthly sub, what tier, what number. (Premium — money-rich audience.) NEXT.
-2. **Why YOU vs Mindra/rivals** — one-sentence moat pitch. (Rivals produce AI-slop; nymphee preserves voice
+2. **Why YOU vs Mindra/rivals** — one-sentence moat pitch. (Rivals produce AI-slop; braindot preserves voice
    + filters flops. Damla's fuel: 49 projects, C++ engine, live self-demo = uncommon founder proof.)
 
 **ORDER for coming sessions (Damla's call 16 Jul):** keep talking BUSINESS MODEL → then DESIGN → THEN start
